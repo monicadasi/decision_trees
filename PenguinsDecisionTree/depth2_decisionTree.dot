@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="culmen_depth_mm <= 18.05\ngini = 0.499\nsamples = 233\nvalue = [111, 122]\nclass = FEMALE"] ;
+1 [label="culmen_depth_mm <= 14.85\ngini = 0.446\nsamples = 137\nvalue = [91, 46]\nclass = MALE"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.21\nsamples = 42\nvalue = [37, 5]\nclass = MALE"] ;
+1 -> 2 ;
+3 [label="gini = 0.491\nsamples = 95\nvalue = [54, 41]\nclass = MALE"] ;
+1 -> 3 ;
+4 [label="culmen_depth_mm <= 19.35\ngini = 0.33\nsamples = 96\nvalue = [20, 76]\nclass = FEMALE"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.421\nsamples = 63\nvalue = [19, 44]\nclass = FEMALE"] ;
+4 -> 5 ;
+6 [label="gini = 0.059\nsamples = 33\nvalue = [1, 32]\nclass = FEMALE"] ;
+4 -> 6 ;
+}
